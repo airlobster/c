@@ -27,9 +27,9 @@ Expression evaluator written in plain C, with support for pluggable functions
 
   Numbers may be entered using the following formats:
   1) Interger | Floating point | Full scientific notation
-  2) Binary: 0bBBBBBBBB
-  3) Octal: 0OOOOOOOOO
-  4) Hex: 0xHHHHHHHHHHH
+  2) Binary: **0b**BBBBBBBB
+  3) Octal: **0**OOOOOOOOO
+  4) Hex: **0x**HHHHHHHHHHH
   
   (TODO: Add an option to print out results in a specified format)
 
