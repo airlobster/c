@@ -6,6 +6,27 @@ Expression evaluator written in plain C, with support for pluggable functions
 2) pluggable internal and external functions.
 3) persistent history.
 
+Operators:
+
+-
++
+*
+/
+%
+** (power)
+// (root)
+<< (shift left)
+>> (shift right)
+& (logical and)
+| (logical or)
+^ (logical xor)
+() (parenthesis)
+= (assign to a variable)
+
+Last Result:
+
+If a symbol-table object is provided, the evaluator stores its last result to the '_' variable for later reference.
+
 Pluggable Functions:
 
   Initially, this calculator does not come with any pre-defined functions, they can be easily added either internally (see calcex.h, calcex.c), or as     external shell scripts. Whenever an expression try to use a function, the name of that function is first searched in the internal functions list, and if not found, that name is searched as a script-name in the same directory of the executable.
