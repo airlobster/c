@@ -8,20 +8,20 @@ Expression evaluator written in plain C, with support for pluggable functions
 
 Operators:
 
--
-+
-*
-/
-%
-** (power)
-// (root)
-<< (shift left)
->> (shift right)
-& (logical and)
-| (logical or)
-^ (logical xor)
-() (parenthesis)
-= (assign to a variable)
+  1) -
+  2) +
+  3) *
+  4) /
+  5) %
+  6) ** (power)
+  7) // (root)
+  8) << (shift left)
+  9) >> (shift right)
+  10) & (logical and)
+  11) | (logical or)
+  12) ^ (logical xor)
+  13) () (parenthesis)
+  14) = (assign to a variable)
 
 Last Result:
 
