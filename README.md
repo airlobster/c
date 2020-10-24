@@ -6,24 +6,24 @@ Expression evaluator written in plain C, with support for pluggable functions
 2) pluggable internal and external functions.
 3) persistent history.
 
-Operators:
+## Operators:
 
-  1) -
-  2) +
-  3) *
-  4) /
-  5) %
-  6) ** (power)
-  7) // (root)
-  8) << (shift left)
-  9) >> (shift right)
-  10) & (logical and)
-  11) | (logical or)
-  12) ^ (logical xor)
-  13) () (parenthesis)
-  14) = (assign to a variable)
+  * \-
+  * \+
+  * \*
+  * \/
+  * \%
+  * \*\* (power)
+  * \/\/ (root)
+  * \<\< (shift left)
+  * \>\> (shift right)
+  * \& (logical and)
+  * \| (logical or)
+  * \^ (logical xor)
+  * \(\) (parenthesis)
+  * \= (assign to a variable)
 
-Literal Numbers:
+## Literal Numbers:
 
   Numbers may be entered using the following formats:
   1) Interger | Floating point | Full scientific notation
@@ -33,16 +33,16 @@ Literal Numbers:
   
   (TODO: Add an option to print out results in a specified format)
 
-Last Result:
+## Last Result:
 
   If a symbol-table object is provided, the evaluator stores its last result to the '_' variable for later reference.
 
-Pluggable Functions:
+## Pluggable Functions:
 
   Initially, this calculator does not come with any pre-defined functions, they can be easily added either internally (see calcex.h, calcex.c), or as     external shell scripts. Whenever an expression try to use a function, the name of that function is first searched in the internal functions list, and if not found, that name is searched as a script-name in the same directory of the executable.
 Function scripts are expected to receive any number of arguments and print out a numeric result to STDOUT.
 
-Implementation Notes:
+## Implementation Notes:
 
   1) The evaluator entry point (calc_evaluate(), see calc.h) takes a single expression string and a symbol-table interface, and returns a numeric result.
 This way multiple successive calls can be made to the evaluator with the same symbol-table object, allowing passing variables from one expression to the next ones. (See main.c).
