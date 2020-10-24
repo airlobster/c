@@ -23,9 +23,19 @@ Operators:
   13) () (parenthesis)
   14) = (assign to a variable)
 
+Literal Numbers:
+
+  Numbers may be entered using the following formats:
+  1) Interger | Floating point | Full scientific notation
+  2) Binary: 0bBBBBBBBB
+  3) Octal: 0OOOOOOOOO
+  4) Hex: 0xHHHHHHHHHHH
+  
+  (TODO: Add an option to print out results in a specified format)
+
 Last Result:
 
-If a symbol-table object is provided, the evaluator stores its last result to the '_' variable for later reference.
+  If a symbol-table object is provided, the evaluator stores its last result to the '_' variable for later reference.
 
 Pluggable Functions:
 
