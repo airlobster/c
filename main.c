@@ -27,7 +27,7 @@ static int _process_user_input(const char* line, void* context) {
 	} else if( strcmp(line, "/q")==0 ) {
 		err = -1;
 	} else if( strcmp(line, "/v")==0 ) {
-		printf("%s\n", __version);
+		printf("Version: %s\n", appversion());
 	} else if( (err=calc_evaluate(line, ext, ext, &v)) == CS_OK ) {
 		printf("%.20LG\n", v);
 	} else {
